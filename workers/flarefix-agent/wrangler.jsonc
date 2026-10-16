@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "flarefix-agent",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": { "AI_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast" },
+  "durable_objects": { "bindings": [{ "name": "InvestigationAgent", "class_name": "InvestigationAgent" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["InvestigationAgent"] }],
+  "ai": { "binding": "AI" }
+}

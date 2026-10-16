@@ -1,0 +1,7 @@
+{
+  "name": "flarefix-agent",
+  "private": true,
+  "scripts": { "types:generate": "wrangler types", "validate": "npm run types:generate && wrangler deploy --dry-run" },
+  "dependencies": { "agents": "^0.28.0", "ai": "^7.0.0" },
+  "devDependencies": { "@types/node": "^22.10.2", "typescript": "^5.7.2", "wrangler": "^4.0.0" }
+}
